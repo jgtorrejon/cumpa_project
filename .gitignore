@@ -1,0 +1,16 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+.env
+/.vscode
+/media
+db.sqlite3
+
+.DS_Store
+/venv
+/static
+/fexpoadmin/settings/local.py
