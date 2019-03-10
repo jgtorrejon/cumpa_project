@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('This is a cumpa test')
+    return render(request, 'cumpa/index.html')
