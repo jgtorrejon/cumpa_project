@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:10-alpine
+  web:
+    image: jgtorrejon/ya_basta:0.0.2
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "80:8000"
+    depends_on:
+      - db
