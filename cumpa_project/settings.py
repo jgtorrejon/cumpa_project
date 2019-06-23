@@ -74,27 +74,27 @@ WSGI_APPLICATION = 'cumpa_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'cumpa_project',
-#         'USER': 'sistemaspieb',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
-#         'PORT': '5432'
-#     }
-# }
-
-# Docker DB setup
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cumpa_project',
+        'USER': 'joeltorrejon',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
+
+# Docker DB setup
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'HOST': 'db',
+#         'PORT': 5432
+#     }
+# }
 
 
 # Password validation
