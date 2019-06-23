@@ -1,0 +1,24 @@
+# Project Info
+project_name: cumpa_project # Project name for django project
+
+# Repository
+repo_url: git@github.com:jgtorrejon/cumpa_project.git
+branch: master
+remote_name: origin
+
+# Server
+server_user: vagrant
+server_ip: '50.208.61.213'
+server_ssh_port: 22
+server_project_path: /home/vagrant/apps/cumpa_project
+server_venv_path: /home/vagrant/venvs/cumpa_project
+
+# Gunicorn
+gunicorn_config_file: gunicorn.conf.py
+gunicorn_bind: unix:/home/vagrant/apps/cumpa_project/cumpa_project.sock
+gunicorn_pid_file: /home/vagrant/apps/cumpa_project/cumpa_project.pid
+gunicorn_workers: 1 # Recommended: (2 x $num_cores) + 1
+gunicorn_worker_class: sync # Other options: http://docs.gunicorn.org/en/latest/settings.html#worker-class
+
+# Python
+python_runtime_venv: python3 # Path for python interpreter

@@ -19,6 +19,6 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cumpa/', include('cumpa.urls')),
+    path('', include('cumpa.urls')),
     path('accounts/login/', auth_views.LoginView.as_view(template_name='session/login.html'))
 ]
