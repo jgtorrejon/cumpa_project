@@ -13,3 +13,5 @@ db.sqlite3
 .DS_Store
 /venv
 /fexpoadmin/settings/local.py/cumpa_project/settings/local.py
+
+/.idea
