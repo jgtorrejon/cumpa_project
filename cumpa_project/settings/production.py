@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'cumpa_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cumpa_project',
-        'USER': 'joeltorrejon',
-        'PASSWORD': '',
+        'NAME': 'cumpadb',
+        'USER': 'cumpa',
+        'PASSWORD': 'cumpafriend',
         'HOST': 'localhost',
         'PORT': '5432'
     }
