@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
 
@@ -11,13 +9,8 @@
     <title>Cumpa | Log in</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="{% static 'Ionicons/css/ionicons.min.css' %}">
     <!-- Theme style -->
+	{% load static %}
     <link rel="stylesheet" href="{% static 'css/AdminLTE.min.css' %}">
     <!-- Google Font -->
     <link rel="stylesheet"
@@ -32,29 +25,24 @@
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
-            <form action="https://adminlte.io/themes/AdminLTE/index2.html" method="post">
+            <form method="post">
+				{% csrf_token %}
                 <div class="form-group has-feedback">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Username" name="username">
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
-                <div class="row">
-                    <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-                    </div>
+                <div class="form-group has-feedback">
+					<button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div>
             </form>
 
         </div>
     </div>
 
-    <!-- jQuery 3 -->
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <!-- Bootstrap 3.3.7 -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
 
 </html>
