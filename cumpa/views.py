@@ -30,3 +30,11 @@ def login(request):
 def logout(request):
 	logout_user(request)
 	return redirect('login')
+
+
+def chat_robot(request):
+	return render(request, 'cumpa/chat_robot.html')
+
+def chat_people(request):
+	return render(request, 'cumpa/chat_people.html')
+
