@@ -38,3 +38,12 @@ def chat_robot(request):
 def chat_people(request):
 	return render(request, 'cumpa/chat_people.html')
 
+def customers(request):
+	return render(request, 'cumpa/customers.html')
+
+def broadcast(request):
+	return render(request, 'cumpa/broadcast.html')
+
+def settings(request):
+	return render(request, 'cumpa/settings.html')
+
