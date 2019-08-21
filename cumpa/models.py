@@ -5,7 +5,7 @@ from .utils import upload_location
 # Create your models here.
 
 
-class Client(models.Model):
+class Customer(models.Model):
 	name = models.CharField(max_length=50)
 	last_name = models.CharField(max_length=50)
 	picture = models.ImageField(upload_to=upload_location, null=True, blank=True)
