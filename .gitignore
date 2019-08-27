@@ -16,3 +16,8 @@ db.sqlite3
 /cumpa_project/settings/local.py
 
 /.idea
+
+# Deploy settings
+deploy.yml
+gunicorn.conf.py
+ngnix.conf
