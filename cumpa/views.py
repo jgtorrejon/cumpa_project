@@ -36,6 +36,21 @@ def logout(request):
 	return redirect('login')
 
 
+def chat_robot(request):
+	return render(request, 'cumpa/chat_robot.html')
+
+def chat_people(request):
+	return render(request, 'cumpa/chat_people.html')
+
+def customers(request):
+	return render(request, 'cumpa/customers.html')
+
+def broadcast(request):
+	return render(request, 'cumpa/broadcast.html')
+
+def settings(request):
+	return render(request, 'cumpa/settings.html')
+
 class CustomerListView(LoginRequiredMixin, ListView):
 	model = Customer
 	template_name = 'customer/index.html'
