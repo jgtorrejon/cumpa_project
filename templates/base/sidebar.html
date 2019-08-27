@@ -2,6 +2,7 @@
 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 	<a href="{% url 'index' %}" class="brand-link">
+	<!-- Brand Logo -->
 		<img src="{% static 'images/cumpa-logo.jpg' %}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
 			style="opacity: .9">
 		<span class="brand-text font-weight-light">Cumpa Project</span>
@@ -48,7 +49,13 @@
 					</ul>
 				</li>
 				<li class="nav-item has-treeview">
-					<a href="{% url 'customers' %}" class="nav-link">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-chart-pie"></i>
+						<p>Análisis</p>
+					</a>
+				</li>
+				<li class="nav-item has-treeview">
+					<a href="{% url 'customers-index' %}" class="nav-link">
 						<i class="nav-icon fas fa-user"></i>
 						<p>Customers</p>
 					</a>

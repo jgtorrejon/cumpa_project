@@ -1,6 +1,10 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login as login_user, logout as logout_user
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import ListView
+
+from .models import Customer
 
 
 # Create your views here.
@@ -47,3 +51,8 @@ def broadcast(request):
 def settings(request):
 	return render(request, 'cumpa/settings.html')
 
+class CustomerListView(LoginRequiredMixin, ListView):
+	model = Customer
+	template_name = 'customer/index.html'
+
+	login_url = 'accounts/login/'

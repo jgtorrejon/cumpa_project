@@ -10,5 +10,7 @@ urlpatterns = [
 	path('cumpa/settings', views.settings, name='settings'),
 	path('cumpa/customers', views.customers, name='customers'),
     path('accounts/login/', views.login, name='login'),
-    path('accounts/logout/', views.logout, name='logout')
+    path('accounts/logout/', views.logout, name='logout'),
+    # Customer
+    path('customers/', views.CustomerListView.as_view(), name='customers-index')
 ]
