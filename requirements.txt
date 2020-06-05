@@ -2,7 +2,7 @@ asn1crypto==0.24.0
 bcrypt==3.1.7
 cffi==1.12.3
 cryptography==2.7
-Django==2.1.5
+Django==2.2.13
 django-extensions==2.1.5
 django-up==0.2.1
 fabric2==2.4.0
