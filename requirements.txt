@@ -8,7 +8,7 @@ django-up==0.2.1
 fabric2==2.4.0
 gunicorn==19.9.0
 invoke==1.2.0
-paramiko==2.6.0
+paramiko==2.10.1
 Pillow==6.1.0
 psycopg2==2.7.7
 psycopg2-binary==2.7.7
